@@ -41,10 +41,10 @@
     justify-items: center;
 }
 #screen {
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-
+    color: rgb(179, 244, 205);
 }
 body {
     background-color: rgb(5, 102, 126);
