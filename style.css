@@ -30,6 +30,7 @@
     font-weight: 600;
     border-radius: 10px;
     background-color: rgb(21, 214, 214);
+    margin-left: 130px;
 }
 #restart:hover {
     background-color: aqua;
@@ -45,7 +46,52 @@
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(179, 244, 205);
+    margin-left: 140px;
 }
 body {
     background-color: rgb(5, 102, 126);
+}
+#gameface {
+    display: none;
+}
+#butt {
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(21, 214, 214);
+    height: 6vh;
+}
+#name1, #name2 {
+    padding: 6px;
+    /* color: rgb(23, 171, 182); */
+    font-weight: bolder;
+    width: 45vw;
+    border-radius: 10px;
+}
+#names {
+    display: flex;
+    margin: 5px;
+}
+#status {
+    color: rgb(22, 216, 255);
+    font-family: cursive;
+    text-shadow: 3px 2px 10px aquamarine;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1150px) {
+    #name1, #name2 {
+        padding: 6px;
+        /* color: rgb(23, 171, 182); */
+        font-weight: bolder;
+        width: 20vw;
+    }
+    #butt {
+        margin-left: 5px;
+    }
+    #restart {
+        margin-left: 15px;
+    }
 }

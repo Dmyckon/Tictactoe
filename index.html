@@ -9,20 +9,29 @@
 <body>
     <diV id="cover">
         <h1 id="head">TIC-TAC-TOE</h1>
+        <h1 id="status">Enter your name to begin</h1>
+    <div id="names">
+        <input id="name1" placeholder="player X">
+        <input id="name2" placeholder="player O">
+    </div>
+        <button onclick="startGame()" id="butt">Start Game</button>
+
+    <div id="gameface">
         <div id="screen"></div>
-    <div class="container">
-        <div id="box1" onclick="viewClick(event)"></div>
-        <div id="box2" onclick="viewClick(event)"></div>
-        <div id="box3" onclick="viewClick(event)"></div>
-        <div id="box4" onclick="viewClick(event)"></div>
-        <div id="box5" onclick="viewClick(event)"></div>
-        <div id="box6" onclick="viewClick(event)"></div>
-        <div id="box7" onclick="viewClick(event)"></div>
-        <div id="box8" onclick="viewClick(event)"></div>
-        <div id="box9" onclick="viewClick(event)"></div>
-    </div>    
+        <div class="container">
+            <div id="box1" onclick="viewClick(event)"></div>
+            <div id="box2" onclick="viewClick(event)"></div>
+            <div id="box3" onclick="viewClick(event)"></div>
+            <div id="box4" onclick="viewClick(event)"></div>
+            <div id="box5" onclick="viewClick(event)"></div>
+            <div id="box6" onclick="viewClick(event)"></div>
+            <div id="box7" onclick="viewClick(event)"></div>
+            <div id="box8" onclick="viewClick(event)"></div>
+            <div id="box9" onclick="viewClick(event)"></div>
+        </div>    
         <button onclick="handleClick()" id="restart">Restart</button>
     </diV>
+    </div>
 
 
     <script src="./script.js"></script>

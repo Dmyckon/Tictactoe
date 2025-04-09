@@ -7,6 +7,17 @@
      var player2 = "O"
      var gameMove = true
 
+     var playernames;
+     playernames = []
+function startGame() {
+    document.getElementById("gameface").style.display = "block"
+    document.getElementById("status").style.display = "none"
+    document.getElementById("names").style.display = "none"
+    document.getElementById("butt").style.display = "none"
+
+
+}
+
 
 function viewClick(event){
     var cell = event.target
@@ -24,6 +35,12 @@ function viewClick(event){
     document.getElementById("box1").innerHTML == "O" && document.getElementById("box5").innerHTML =="O" && document.getElementById("box9").innerHTML == "O" || 
     document.getElementById("box3").innerHTML == "O" && document.getElementById("box5").innerHTML =="O" && document.getElementById("box7").innerHTML == "O") {
         document.getElementById("screen").innerHTML = "O won"}
+
+    if(document.getElementById("box1").innerHTML == "O" && document.getElementById("box2").innerHTML == "X" && document.getElementById("box3").innerHTML == "O" || document.getElementById("box4").innerHTML == "O" && document.getElementById("box5").innerHTML == "X" && document.getElementById("box6").innerHTML == "X" || document.getElementById("box7").innerHTML == "O" && document.getElementById("box8").innerHTML == "X" && document.getElementById("box9").innerHTML == "O" || document.getElementById("box1").innerHTML == "X" && document.getElementById("box4").innerHTML == "O" && document.getElementById("box7").innerHTML == "X" || document.getElementById("box2").innerHTML == "O" && document.getElementById("box5").innerHTML == "O" && document.getElementById("box8").innerHTML == "X" || 
+    document.getElementById("box3").innerHTML == "X" && document.getElementById("box6").innerHTML == "O" && document.getElementById("box9").innerHTML == "O" || 
+    document.getElementById("box1").innerHTML == "X" && document.getElementById("box5").innerHTML == "O" && document.getElementById("box9").innerHTML == "X" ||
+    document.getElementById("box3").innerHTML == "O" && document.getElementById("box5").innerHTML == "X" && document.getElementById("box7").innerHTML == "O") {
+        document.getElementById("screen").innerHTML = "Draw"}
 }
 
 function handleClick() {
